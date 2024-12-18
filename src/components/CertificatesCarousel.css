@@ -1,0 +1,110 @@
+.mentors-container {
+    overflow: hidden; /* Скрываем все элементы, выходящие за границы */
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  /* Добавляем затемнение по краям с помощью псевдоэлементов */
+  .mentors-container::before,
+  .mentors-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Ширина затемнения с каждой стороны */
+    z-index: 1;
+    pointer-events: none; /* Чтобы не мешать взаимодействию */
+  }
+  
+  .mentors-title {
+    padding: 2% 0;
+    text-align: center;
+  }
+  
+  .mentors-carousel {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    will-change: transform;
+  }
+  
+  .mentor-card {
+    width: 300px;
+    height: 500px; /* Устанавливаем фиксированную высоту карточки */
+    margin-right: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Карточка будет вертикальной */
+    justify-content: space-between; /* Контент будет равномерно распределен по карточке */
+  }
+  
+  .mentor-card:hover {
+    transform: scale(1.05); /* Небольшое увеличение при наведении */
+  }
+  
+  .mentor-photo {
+    width: 100%;
+    /* height: ; Ограничиваем высоту фотографии */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .mentor-info {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1; /* Чтобы информация занимала оставшееся пространство */
+  }
+  
+  .mentor-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .mentor-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Медиазапросы для адаптивности */
+  @media (max-width: 1024px) {
+    .mentor-card {
+      width: 250px; /* Уменьшаем размер карточки на средних экранах */
+      height: 350px; /* Уменьшаем высоту */
+    }
+  
+    .mentor-photo {
+      height: 180px; /* Уменьшаем высоту изображения */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mentor-card {
+      width: 200px; /* Уменьшаем размер карточки на мобильных */
+      height: 300px; /* Уменьшаем высоту */
+    }
+  
+    .mentor-photo {
+      height: 150px; /* Уменьшаем высоту изображения */
+    }
+  
+    .mentors-carousel {
+      flex-direction: column; /* Меняем направление на вертикальное для мобильных */
+      align-items: center; /* Центрируем элементы */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mentor-card {
+      width: 180px; /* Еще больше уменьшаем размер карточки */
+      height: 280px; /* Уменьшаем высоту */
+    }
+  
+    .mentor-photo {
+      height: 130px; /* Еще меньше высота изображения */
+    }
+  }
+  
