@@ -149,3 +149,7 @@ color: #ffffff ;
     display: flex;
   }
 }
+
+.open .nav-link{
+  color: #03183f;
+}
