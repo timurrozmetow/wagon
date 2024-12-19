@@ -4,19 +4,19 @@ import './CertificatesCarousel.css';
 
 const CertificatesCarousel = () => {
   const certificates = [
-    { id: 1, image: 'cert/c1.jpg', title: 'Certificate 1' },
-    { id: 2, image: 'cert/c2.jpg', title: 'Certificate 2' },
-    { id: 3, image: 'cert/c3.jpg', title: 'Certificate 3' },
+    { id: 1, image: 'cert/c1.webp', title: 'Certificate 1' },
+    { id: 2, image: 'cert/c2.webp', title: 'Certificate 2' },
+    { id: 3, image: 'cert/c3.webp', title: 'Certificate 3' },
   ];
 
   const controls = useAnimation();
 
   useEffect(() => {
-    const totalWidth = certificates.length * 300; // 300px - ширина одной карточки
+    const totalWidth = certificates.length * 300;
     controls.start({
       x: [0, -totalWidth],
       transition: {
-        duration: certificates.length * 7, // Регулировка скорости
+        duration: certificates.length * 7,
         repeat: Infinity,
         ease: 'linear',
       },
@@ -52,9 +52,6 @@ const CertificatesCarousel = () => {
                 alt={certificate.title}
                 className="mentor-photo"
               />
-              {/* <div className="mentor-info">
-                <h3 className="mentor-name">{certificate.title}</h3>
-              </div> */}
             </div>
           ))}
         </motion.div>

@@ -1,4 +1,4 @@
-/* Общие стили для Navbar */
+
 .ImgLogo {
   width: 50%;
   max-width: 120px;
@@ -20,9 +20,8 @@
 }
 
 .navbar.scrolled {
-  background-color: #03183f; /* Темный фон при прокрутке */
+  background-color: #03183f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 15px 20px; /* Сужаем padding при скролле */
 }
 
 .logo {
@@ -37,13 +36,11 @@
 .navbar.scrolled .logo {
   color: #ffffff;
 }
-
-/* Контейнер для навигационных ссылок */
 .nav-links {
   display: flex;
   gap: 30px;
   align-items: center;
-  transition: transform 0.3s ease; /* Плавная анимация меню */
+  transition: transform 0.3s ease;
 }
 
 .navbar.scrolled .nav-link {
@@ -67,7 +64,6 @@
   cursor: pointer;
 }
 
-/* Стили для хаббургер-меню */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -109,9 +105,13 @@
 }
 
 .navbar.scrolled .nav-link {
-color: #ffffff !important; 
+color: #ffffff ; 
 }
-/* Адаптивность */
+.navbar.scrolled .nav-link:hover {
+  background-color: #ffffff ; 
+  color: #03183f ; 
+  }
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
@@ -127,7 +127,7 @@ color: #ffffff !important;
     top: 100%;
     left: 0;
     background-color: #ffffff;
-    z-index: -1; /* Скрываем меню при закрытии */
+    z-index: -1;
     padding: 20px 30px;
     transform: translateX(-100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -145,7 +145,6 @@ color: #ffffff !important;
     text-align: left;
   }
 
-  /* Показать хаббургер-меню на мобильных устройствах */
   .menu-icon {
     display: flex;
   }

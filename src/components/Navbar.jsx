@@ -21,34 +21,17 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <img className="ImgLogo" src="logo/q.png" alt="logo" />
+        <img className="ImgLogo" src="logo/q.webp" alt="logo" />
       </div>
-
-      {/* Навигационные ссылки */}
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-        <Link to="about" smooth={true} duration={500} className="nav-link">
-          About
-        </Link>
-        <Link to="capacity" smooth={true} duration={500} className="nav-link">
-        Capacity
-        </Link>
-        <Link to="railways" smooth={true} duration={500} className="nav-link">
-        Wagon
-        </Link>
-        
-         
-        <Link to="services" smooth={true} duration={500} className="nav-link">
-        Certificates
-        </Link>
-        
-        <Link to="contact" smooth={true} duration={500} className="nav-link">
-          Contact
-        </Link>
 
+ <a href="#about" className="nav-link">About</a>
+  <a href="#capacity" className="nav-link">Capacity</a>
+  <a href="#railways" className="nav-link">Wagon</a>
+  <a href="#services" className="nav-link">Certificates</a>
+  <a href="#contact" className="nav-link">Contact</a>
         
       </div>
-
-      {/* Хаббургер-меню */}
       <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
         <div className="line"></div>
         <div className="line"></div>

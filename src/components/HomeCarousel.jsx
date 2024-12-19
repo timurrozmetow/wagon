@@ -1,4 +1,4 @@
-// src/components/HomeCarousel.jsx
+
 import React from "react";
 import "./HomeCarousel.css";
 

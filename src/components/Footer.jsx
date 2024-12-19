@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <img src="logo/q.png" alt="Logo" className="footer-img-logo" />
+          <img src="logo/q.webp" alt="Logo" className="footer-img-logo" />
           <p className="footer-tagline">Grand Millennium</p>
         </div>
 
@@ -20,15 +20,6 @@ const Footer = () => {
         </ul>
 
         </div>
-        
-        {/* <div className="footer-social">
-          <h4>Follow Us</h4>
-          <div className="social-icons">
-            <a href="https://facebook.com" className="social-icon"><i className="fab fa-facebook-f"></i> /zawod</a>
-            <a href="https://twitter.com" className="social-icon"><i className="fab fa-twitter"></i> /zawod</a>
-            <a href="https://instagram.com" className="social-icon"><i className="fab fa-instagram"></i> /zawod</a>
-          </div>
-        </div> */}
       </div>
       
       <div className="footer-bottom">

@@ -1,6 +1,5 @@
-/* Общие стили для PowerSection */
 .power-container h2 {
-  font-size: 2.5rem; /* Универсальный размер для заголовка */
+  font-size: 2.5rem;
   font-weight: 500;
   color: #03183f;
   margin-bottom: 30px;
@@ -20,8 +19,8 @@
 .power-stats {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Для адаптации на маленьких экранах */
-  gap: 20px; /* Разрыв между элементами */
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 2% 0;
 }
 
@@ -33,11 +32,11 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 300px; /* Ограничиваем ширину каждого элемента */
+  max-width: 300px;
 }
 
 .stat-item:hover {
-  transform: translateY(-8px); /* Анимация при наведении */
+  transform: translateY(-8px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -49,7 +48,7 @@
 }
 
 .stat-number {
-  font-size: 24px; /* Немного увеличиваем размер */
+  font-size: 24px; 
   font-weight: bold;
   color: #333;
   margin-bottom: 5px;
@@ -63,11 +62,11 @@
 /* Адаптивность */
 @media (max-width: 1024px) {
   .stat-item {
-    flex: 1 1 45%; /* Два элемента в строке на средних экранах */
+    flex: 1 1 45%;
   }
 
   .stat-number {
-    font-size: 20px; /* Уменьшаем размер текста */
+    font-size: 20px;
   }
 
   .stat-label {
@@ -77,16 +76,16 @@
 
 @media (max-width: 768px) {
   .power-container h2 {
-    font-size: 2rem; /* Уменьшаем размер заголовка на маленьких экранах */
+    font-size: 2rem;
   }
 
   .stat-item {
-    flex: 1 1 100%; /* Один элемент в строке на маленьких экранах */
-    max-width: none; /* Убираем ограничение ширины */
+    flex: 1 1 100%;
+    max-width: none;
   }
 
   .stat-number {
-    font-size: 18px; /* Ещё меньше текста */
+    font-size: 18px;
   }
 
   .stat-label {
@@ -100,7 +99,7 @@
   }
   
   .stat-icon {
-    font-size: 36px; /* Уменьшаем иконки на самых маленьких экранах */
+    font-size: 36px;
   }
 
   .stat-number {

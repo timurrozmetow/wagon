@@ -1,11 +1,10 @@
-// src/components/AboutSection.jsx
 import React from "react";
 import "./Contact.css";
 
 const Contact = () => {
   return (
     <section id="contact" className="about-section1">
-      <img className="img2" src="banner/2.jpg" alt="logo" />
+      <img className="img2" src="banner/2.webp" alt="logo" />
       <div className="about-container">
         <h2>Contact</h2>
         <p className="about-description">

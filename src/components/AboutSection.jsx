@@ -1,11 +1,10 @@
-// src/components/AboutSection.jsx
 import React from "react";
 import "./AboutSection.css";
 
 const AboutSection = () => {
   return (
     <section id="about" className="about-section">
-      <img className="img1" src="banner/1.jpg" alt="logo" />
+      <img className="img1" src="banner/1.webp" alt="logo" />
       <div className="about-container1">
         <h2>About Us</h2>
         <p className="about-description1">

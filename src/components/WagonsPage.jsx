@@ -5,7 +5,7 @@ const wagonsData = [
     {
       id: 1,
       name: "Freight Wagon Model A",
-      image: "wagon/w1.jpg",
+      image: "wagon/w1.webp",
       specs: {
         capacity: "70 tons",
         length: "22.7 m",
@@ -15,7 +15,7 @@ const wagonsData = [
     {
       id: 2,
       name: "Tank Wagon Model B",
-      image: "wagon/w2.jpg",
+      image: "wagon/w2.webp",
       specs: {
         capacity: "63.3 tons",
         length: "15.5 m",
@@ -25,7 +25,7 @@ const wagonsData = [
     {
       id: 3,
       name: "Specialized Wagon Model C",
-      image: "wagon/w3.jpg",
+      image: "wagon/w3.webp",
       specs: {
         capacity: "55 tons",
         length: "18.2 m",
@@ -35,7 +35,7 @@ const wagonsData = [
     {
       id: 4,
       name: "Freight Wagon Model D",
-      image: "wagon/w4.jpg",
+      image: "wagon/w4.webp",
       specs: {
         capacity: "60 tons",
         length: "20 m",
@@ -45,7 +45,7 @@ const wagonsData = [
     {
       id: 5,
       name: "Tank Wagon Model E",
-      image: "wagon/w5.jpg",
+      image: "wagon/w5.webp",
       specs: {
         capacity: "65 tons",
         length: "16 m",
@@ -55,7 +55,7 @@ const wagonsData = [
     {
       id: 6,
       name: "Specialized Wagon Model F",
-      image: "wagon/w6.jpg",
+      image: "wagon/w6.webp",
       specs: {
         capacity: "50 tons",
         length: "17 m",
@@ -65,7 +65,7 @@ const wagonsData = [
     {
       id: 7,
       name: "Freight Wagon Model G",
-      image: "wagon/w10.jpg",
+      image: "wagon/w10.webp",
       specs: {
         capacity: "75 tons",
         length: "23 m",
@@ -75,7 +75,7 @@ const wagonsData = [
     {
       id: 8,
       name: "Tank Wagon Model H",
-      image: "wagon/w8.jpg",
+      image: "wagon/w8.webp",
       specs: {
         capacity: "68 tons",
         length: "18 m",
@@ -85,7 +85,7 @@ const wagonsData = [
     {
       id: 9,
       name: "Specialized Wagon Model I",
-      image: "wagon/w9.jpg",
+      image: "wagon/w9.webp",
       specs: {
         capacity: "53 tons",
         length: "19 m",
@@ -106,7 +106,6 @@ const wagonsData = [
                 <h2>{wagon.name}</h2>
                 <p>Capacity: {wagon.specs.capacity}</p>
                 <p>Length: {wagon.specs.length}</p>
-                {/* <p>Type: {wagon.specs.type}</p> */}
               </div>
             </div>
           ))}

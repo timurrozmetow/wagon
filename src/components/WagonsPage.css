@@ -1,4 +1,3 @@
-/* Общие стили для WagonsPage */
 .wagons-page {
   padding: 2%;
   background-color: #f4f4f4;
@@ -11,8 +10,6 @@
   color: #03183f;
   margin-bottom: 20px;
 }
-
-/* Сетка карточек */
 .wagons-grid {
   padding: 4%;
   display: grid;
@@ -20,8 +17,6 @@
   gap: 20px;
   justify-content: center;
 }
-
-/* Карточка вагона */
 .wagon-card {
   background: #3e5879;
   color: #f4f4f4;
@@ -37,8 +32,6 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-
-/* Изображение вагона */
 .wagon-image {
   background: #fff;
   width: 100%;
@@ -47,7 +40,6 @@
   object-fit: cover;
 }
 
-/* Информация о вагоне */
 .wagon-info {
   padding: 15px;
   text-align: left;
@@ -64,15 +56,13 @@
   font-size: 1rem;
   color: #f4f4f4;
 }
-
-/* Адаптивность */
 @media (max-width: 1024px) {
   .wagons-grid {
-    grid-template-columns: repeat(2, 1fr); /* На средних экранах 2 в ряд */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .wagon-info h2 {
-    font-size: 1.25rem; /* Уменьшаем размер заголовка */
+    font-size: 1.25rem;
   }
 
   .wagon-info p {
@@ -82,11 +72,11 @@
 
 @media (max-width: 768px) {
   .wagons-grid {
-    grid-template-columns: repeat(2, 1fr); /* Также 2 в ряд */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .wagon-image {
-    height: 180px; /* Уменьшаем высоту изображения */
+    height: 180px;
   }
   .wagons-page h1{
     font-size: 1.6rem;
@@ -95,7 +85,7 @@
 
 @media (max-width: 480px) {
   .wagons-grid {
-    grid-template-columns: 1fr; /* На маленьких экранах 1 в ряд */
+    grid-template-columns: 1fr;
   }
 
   .wagon-info h2 {
@@ -107,7 +97,7 @@
   }
 
   .wagon-image {
-    height: 150px; /* Ещё меньше для компактности */
+    height: 150px;
   }
   .wagons-page h1{
     font-size: 1.4rem;

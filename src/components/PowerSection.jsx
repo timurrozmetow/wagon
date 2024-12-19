@@ -1,4 +1,4 @@
-// src/components/PowerSection.jsx
+
 import React from "react";
 import CountUp from "react-countup";
 import "./PowerSection.css";
