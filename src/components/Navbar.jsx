@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <img className="ImgLogo" src="/logo/q.webp" alt="logo" />
+        <img className="ImgLogo" src="/logo/q.png" alt="logo" />
       </div>
 
       {/* Навигационные ссылки */}
@@ -29,12 +29,23 @@ const Navbar = () => {
         <Link to="about" smooth={true} duration={500} className="nav-link">
           About
         </Link>
-        <Link to="services" smooth={true} duration={500} className="nav-link">
-          Services
+        <Link to="capacity" smooth={true} duration={500} className="nav-link">
+        Capacity
         </Link>
+        <Link to="railways" smooth={true} duration={500} className="nav-link">
+        Wagon
+        </Link>
+        
+         
+        <Link to="services" smooth={true} duration={500} className="nav-link">
+        Certificates
+        </Link>
+        
         <Link to="contact" smooth={true} duration={500} className="nav-link">
           Contact
         </Link>
+
+        
       </div>
 
       {/* Хаббургер-меню */}

@@ -6,8 +6,7 @@ const HomeCarousel = () => {
   return (
     <div className="carousel">
       <div className="carousel-text">
-        <h1>Your Logistics Partner</h1>
-        <p>Fast. Reliable. Everywhere.</p>
+        <h1>Moving forward with each <br /> new carriage</h1>
       </div>
     </div>
   );

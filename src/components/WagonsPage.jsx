@@ -65,7 +65,7 @@ const wagonsData = [
     {
       id: 7,
       name: "Freight Wagon Model G",
-      image: "wagon/w7.jpg",
+      image: "wagon/w10.jpg",
       specs: {
         capacity: "75 tons",
         length: "23 m",
@@ -91,17 +91,7 @@ const wagonsData = [
         length: "19 m",
         type: "Specialized",
       },
-    },
-    {
-      id: 10,
-      name: "Freight Wagon Model J",
-      image: "wagon/w10.jpg",
-      specs: {
-        capacity: "72 tons",
-        length: "21.5 m",
-        type: "Freight",
-      },
-    },
+    }
   ];
   
   const WagonsPage = () => {
@@ -116,7 +106,7 @@ const wagonsData = [
                 <h2>{wagon.name}</h2>
                 <p>Capacity: {wagon.specs.capacity}</p>
                 <p>Length: {wagon.specs.length}</p>
-                <p>Type: {wagon.specs.type}</p>
+                {/* <p>Type: {wagon.specs.type}</p> */}
               </div>
             </div>
           ))}

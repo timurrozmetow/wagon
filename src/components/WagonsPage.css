@@ -1,59 +1,115 @@
+/* Общие стили для WagonsPage */
 .wagons-page {
-    padding: 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
+  padding: 2%;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.wagons-page h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #03183f;
+  margin-bottom: 20px;
+}
+
+/* Сетка карточек */
+.wagons-grid {
+  padding: 4%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Карточка вагона */
+.wagon-card {
+  background: #3e5879;
+  color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.wagon-card:hover {
+  background: #213555;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Изображение вагона */
+.wagon-image {
+  background: #fff;
+  width: 100%;
+  height: 200px;
+  padding: 4%;
+  object-fit: cover;
+}
+
+/* Информация о вагоне */
+.wagon-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.wagon-info h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.wagon-info p {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #f4f4f4;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
   .wagons-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); /* На средних экранах 2 в ряд */
   }
-  
-  
-  .wagon-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .wagon-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .wagon-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .wagon-info {
-    padding: 15px;
-    text-align: left;
-  }
-  
+
   .wagon-info h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.25rem; /* Уменьшаем размер заголовка */
   }
-  
+
   .wagon-info p {
-    font-size: 14px;
-    color: #555;
+    font-size: 0.9rem;
   }
-  
-  @media (max-width: 768px) {
-    .wagons-grid {
-      grid-template-columns: repeat(2, 1fr); /* На средних экранах 2 в ряд */
-    }
+}
+
+@media (max-width: 768px) {
+  .wagons-grid {
+    grid-template-columns: repeat(2, 1fr); /* Также 2 в ряд */
   }
-  
-  @media (max-width: 480px) {
-    .wagons-grid {
-      grid-template-columns: 1fr; /* На маленьких экранах 1 в ряд */
-    }
+
+  .wagon-image {
+    height: 180px; /* Уменьшаем высоту изображения */
   }
+  .wagons-page h1{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wagons-grid {
+    grid-template-columns: 1fr; /* На маленьких экранах 1 в ряд */
+  }
+
+  .wagon-info h2 {
+    font-size: 1rem;
+  }
+
+  .wagon-info p {
+    font-size: 0.8rem;
+  }
+
+  .wagon-image {
+    height: 150px; /* Ещё меньше для компактности */
+  }
+  .wagons-page h1{
+    font-size: 1.4rem;
+  }
+}

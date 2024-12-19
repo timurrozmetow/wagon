@@ -1,50 +1,113 @@
+/* Общие стили для PowerSection */
+.power-container h2 {
+  font-size: 2.5rem; /* Универсальный размер для заголовка */
+  font-weight: 500;
+  color: #03183f;
+  margin-bottom: 30px;
+}
+
 .power-section {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .power-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .power-stats {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.power-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.power-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Для адаптации на маленьких экранах */
+  gap: 20px; /* Разрыв между элементами */
+  padding: 2% 0;
+}
+
+.stat-item {
+  flex: 1 1 200px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px; /* Ограничиваем ширину каждого элемента */
+}
+
+.stat-item:hover {
+  transform: translateY(-8px); /* Анимация при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.stat-icon {
+  font-size: 40px;
+  color: #03183f;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 24px; /* Немного увеличиваем размер */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
   .stat-item {
-    flex: 1 1 200px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 45%; /* Два элемента в строке на средних экранах */
   }
-  
-  .stat-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+  .stat-number {
+    font-size: 20px; /* Уменьшаем размер текста */
+  }
+
+  .stat-label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .power-container h2 {
+    font-size: 2rem; /* Уменьшаем размер заголовка на маленьких экранах */
+  }
+
+  .stat-item {
+    flex: 1 1 100%; /* Один элемент в строке на маленьких экранах */
+    max-width: none; /* Убираем ограничение ширины */
+  }
+
+  .stat-number {
+    font-size: 18px; /* Ещё меньше текста */
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .power-container h2 {
+    font-size: 1.4rem;
   }
   
   .stat-icon {
-    font-size: 40px;
-    color: #0078d4;
-    margin-bottom: 10px;
+    font-size: 36px; /* Уменьшаем иконки на самых маленьких экранах */
   }
-  
+
   .stat-number {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
+    font-size: 16px;
   }
-  
+
   .stat-label {
-    font-size: 18px;
-    color: #666;
+    font-size: 12px;
   }
-  
+}

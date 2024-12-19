@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import './CertificatesCarousel.css';
 
@@ -9,26 +9,23 @@ const CertificatesCarousel = () => {
     { id: 3, image: 'cert/c3.jpg', title: 'Certificate 3' },
   ];
 
-  const [mentors, setMentors] = useState(certificates); // Используем локальный массив вместо fetch
-
   const controls = useAnimation();
 
   useEffect(() => {
-    if (mentors.length > 0) {
-      controls.start({
-        x: [0, -100 * mentors.length],
-        transition: {
-          duration: mentors.length * 3, // Регулируем скорость
-          repeat: Infinity,
-          ease: 'linear',
-        },
-      });
-    }
-  }, [mentors, controls]);
+    const totalWidth = certificates.length * 300; // 300px - ширина одной карточки
+    controls.start({
+      x: [0, -totalWidth],
+      transition: {
+        duration: certificates.length * 7, // Регулировка скорости
+        repeat: Infinity,
+        ease: 'linear',
+      },
+    });
+  }, [certificates, controls]);
 
   return (
     <div className="mentors-section">
-      <h2 className="mentors-title">мдлвамьвам</h2>
+      <h2 className="mentors-title">Our Certificates</h2>
       <div className="mentors-container">
         <motion.div
           className="mentors-carousel"
@@ -36,31 +33,28 @@ const CertificatesCarousel = () => {
           onMouseEnter={() => controls.stop()}
           onMouseLeave={() =>
             controls.start({
-              x: [0, -100 * mentors.length],
+              x: [0, -(certificates.length * 300)],
               transition: {
-                duration: mentors.length * 5,
+                duration: certificates.length * 4,
                 repeat: Infinity,
                 ease: 'linear',
               },
             })
           }
         >
-          {[...mentors, ...mentors].map((mentor, index) => (
+          {[...certificates, ...certificates].map((certificate, index) => (
             <div
-              key={`${mentor.id}-${index}`}
+              key={`${certificate.id}-${index}`}
               className="mentor-card"
             >
               <img
-                src={mentor.image} // Используем изображение из массива
-                alt={mentor.title} // Используем заголовок для alt
+                src={certificate.image}
+                alt={certificate.title}
                 className="mentor-photo"
               />
-              <div className="mentor-info">
-                <h3 className="mentor-name">
-                  {mentor.title}
-                </h3>
-                
-              </div>
+              {/* <div className="mentor-info">
+                <h3 className="mentor-name">{certificate.title}</h3>
+              </div> */}
             </div>
           ))}
         </motion.div>

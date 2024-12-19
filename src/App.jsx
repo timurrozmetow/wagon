@@ -8,6 +8,7 @@ import "./App.css";
 import WagonsPage from "./components/WagonsPage";
 import CertificatesCarousel from "./components/CertificatesCarousel";
 import Footer from "./components/footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -17,12 +18,20 @@ function App() {
         <HomeCarousel />
       </section>
       <AboutSection />
+      <section id="capacity">
       <PowerSection />
-      <WagonsPage/>
-      <CertificatesCarousel />
-      <section id="contact" className="section">
-        Contact Section
       </section>
+<section id="railways">
+<WagonsPage/>
+</section>
+
+
+
+      <section id="services">
+      <CertificatesCarousel />
+        
+      </section>
+      <Contact/> 
       <Footer />
     </>
   );

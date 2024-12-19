@@ -1,34 +1,90 @@
-/* src/components/AboutSection.css */
+/* Общие стили для AboutSection */
+.img1 {
+  width: 50%;
+  max-width: 400px; /* Ограничиваем максимальную ширину */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для улучшения внешнего вида */
+}
 
 .about-section {
-    background-color: #f5f5f5;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about-container {
-    max-width: 800px;
+  background-color: #f5f5f5;
+  padding: 3% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Для адаптации на меньших экранах */
+  gap: 20px; /* Расстояние между блоками */
+}
+
+.about-container1 {
+  max-width: 800px;
+  text-align: left;
+  padding: 0 2%;
+  flex: 1 1 300px; /* Адаптивное поведение для контейнера */
+}
+
+.about-container1 h2 {
+  font-weight: 600; /* Немного жирнее для акцента */
+  font-size: 2.5rem;
+  color: #03183f;
+  margin-bottom: 20px;
+}
+
+.about-description1 {
+  font-size: 1.2rem;
+  line-height: 1.6; /* Увеличенный интерлиньяж для читабельности */
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.about-highlights1 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6c757d;
+  max-width: 90%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column; /* Вертикальная структура на мобильных устройствах */
+    align-items: flex-start;
     text-align: center;
   }
-  
-  .about-container h2 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
+
+  .img1 {
+    width: 70%; /* Увеличиваем ширину изображения на маленьких экранах */
+    margin: 0 auto;
   }
-  
-  .about-description {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #4a4a4a;
-    margin-bottom: 20px;
+
+  .about-container1 {
+    padding: 0;
+    text-align: center;
   }
-  
-  .about-highlights {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #6c757d;
+
+  .about-container1 h2 {
+    font-size: 2rem; /* Уменьшаем размер заголовка */
   }
-  
+
+  .about-description1, .about-highlights1 {
+    font-size: 1rem; /* Немного меньше текста для мобильных устройств */
+    max-width: 100%; /* Растягиваем текст по ширине */
+  }
+}
+
+@media (max-width: 480px) {
+  .img1 {
+    width: 90%; /* Практически полная ширина на самых маленьких экранах */
+  }
+
+  .about-container1 h2 {
+    font-size: 1.2rem; /* Ещё меньше заголовок */
+    margin-bottom: 2%;
+  }
+
+  .about-description1, .about-highlights1 {
+    font-size: 0.9rem; /* Уменьшаем текст ещё больше */
+  }
+}
