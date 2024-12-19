@@ -1,7 +1,7 @@
 {
   "name": "davut",
   "private": true,
-  "homepage": "https://timurrozmetow.github.io/wagon",
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
