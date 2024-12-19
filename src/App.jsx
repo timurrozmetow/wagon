@@ -7,7 +7,7 @@ import PowerSection from "./components/PowerSection";
 import "./App.css";
 import WagonsPage from "./components/WagonsPage";
 import CertificatesCarousel from "./components/CertificatesCarousel";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 
 function App() {
