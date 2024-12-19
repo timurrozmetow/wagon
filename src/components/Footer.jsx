@@ -7,13 +7,14 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <img src="logo/q.png" alt="Logo" className="footer-img-logo" />
-          <p className="footer-tagline">Your tagline or company slogan here</p>
+          <p className="footer-tagline">Grand Millennium</p>
         </div>
 
         <div className="footer-contact">
           <h4>Contact</h4>
           <ul>
-            <li><a href="mailto:contact@yourdomain.com"><i className="fas fa-envelope"></i>grandmillenniuminfo@gmail.com</a></li>
+            <li><a href="mailto:contact@yourdomain.com"><i className="fas fa-envelope"></i>info@grand-millennium.ae</a></li>
+            <li><a href="mailto:contact@yourdomain.com"><i className="fas fa-envelope"></i>sales@grand-millennium.ae</a></li>
             <li><a href="tel:+1234567890"><i className="fas fa-phone-alt"></i>+ 971 509724457</a></li>
             <li><i className="fas fa-map-marker-alt"></i> Dubai Silicon Oasis, DDP, A2 Building Dubai</li>
         </ul>

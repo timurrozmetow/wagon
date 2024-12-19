@@ -104,6 +104,13 @@
 .navbar.scrolled .nav-link{
   color: #03183f;
 }
+.navbar.scrolled .menu-icon .line {
+  background-color: #ffffff !important; 
+}
+
+.navbar.scrolled .nav-link {
+color: #ffffff !important; 
+}
 /* Адаптивность */
 @media (max-width: 768px) {
   .navbar {
