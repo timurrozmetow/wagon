@@ -153,3 +153,19 @@ color: #ffffff ;
 .open .nav-link{
   color: #03183f;
 }
+
+.nav-links.open .nav-link {
+  color: #03183f;
+}
+
+.nav-links.open .nav-link:hover {
+  background-color: #03183fb4;
+  color: #ffffff;
+}
+
+/* Исправление цвета для мобильного состояния */
+@media (max-width: 768px) {
+  .nav-links.open .nav-link {
+    color: #03183f;
+  }
+}
