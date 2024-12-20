@@ -1,22 +1,23 @@
 import React from "react";
 import "./AboutSection.css";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <section id="about" className="about-section">
       <img className="img1" src="banner/1.webp" alt="logo" />
       <div className="about-container1">
-        <h2>About Us</h2>
+        <h2>{t("aboutSec")}</h2>
         <p className="about-description1">
-          The Andijan Mechanical Plant is a leading manufacturer and repair 
-          enterprise in Uzbekistan. It specializes in a wide range of 
-          railway equipment for a 1520 mm gauge, including freight wagons, 
-          tanks, and other specialized wagons for the region and CIS countries.
+        {t("aboutSec1")}
         </p>
         <p className="about-highlights1">
-          Our plant is equipped with state-of-the-art facilities to ensure 
-          top-notch production and repair services, meeting the needs of 
-          modern railway systems.
+        {t("aboutSec2")}
         </p>
       </div>
     </section>

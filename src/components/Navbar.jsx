@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +41,7 @@ const Navbar = () => {
           className="nav-link"
           onClick={closeMenu}
         >
-          About
+          {t("about")}
         </Link>
         <Link
           to="capacity"
@@ -44,7 +50,7 @@ const Navbar = () => {
           className="nav-link"
           onClick={closeMenu}
         >
-          Capacity
+          {t("capacity")}
         </Link>
         <Link
           to="railways"
@@ -53,7 +59,7 @@ const Navbar = () => {
           className="nav-link"
           onClick={closeMenu}
         >
-          Wagon
+          {t("wagon")}
         </Link>
         <Link
           to="services"
@@ -62,7 +68,7 @@ const Navbar = () => {
           className="nav-link"
           onClick={closeMenu}
         >
-          Certificates
+          {t("certificates")}
         </Link>
         <Link
           to="contact"
@@ -71,8 +77,12 @@ const Navbar = () => {
           className="nav-link"
           onClick={closeMenu}
         >
-          Contact
+          {t("contact")}
         </Link>
+      </div>
+      <div className="language-switcher">
+        <button onClick={() => changeLanguage("en")}>EN</button>
+        <button onClick={() => changeLanguage("ru")}>RU</button>
       </div>
       <div
         className={`menu-icon ${menuOpen ? "open" : ""}`}

@@ -169,3 +169,25 @@ color: #ffffff ;
     color: #03183f;
   }
 }
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.language-switcher button {
+  background: none;
+  border: none;
+  color: #03183f;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.language-switcher button:hover {
+  color: #03183fb4;
+}
+
+.navbar.scrolled .language-switcher button {
+  color: #ffffff;
+}
