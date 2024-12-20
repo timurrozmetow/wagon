@@ -121,7 +121,8 @@
 
 @media (max-width: 768px) {
   .wagon-card {
-    flex: 0 0 calc(100% / 2); /* 2 карточки */
+    flex: 0 0 calc(100%  / 2); /* 2 карточки */
+    width: 90%;
   }
 }
 

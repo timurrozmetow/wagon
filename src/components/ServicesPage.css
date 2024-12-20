@@ -24,11 +24,7 @@
     padding: 3%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
-  .service-card:hover {
-    /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); */
-  }
-  
+    
   .service-icon {
     font-size: 3rem;
     color: #03183fd0;
@@ -63,6 +59,10 @@
   }
   .service-icon{
     font-size: 2.4rem;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   @media (max-width: 480px) {
