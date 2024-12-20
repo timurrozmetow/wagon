@@ -50,7 +50,15 @@
     color: #555;
     line-height: 1.6;
   }
-  
+  @media (max-width: 1024px) {
+    .img2 {
+        width: 50%;
+    }
+    .contact-grid{
+        flex-wrap: nowrap;
+    }
+
+  }
   /* Адаптивность */
   @media (max-width: 768px) {
     .contact-title {
@@ -62,7 +70,13 @@
     }
   
     .contact-card {
-      width: 100%;
+      width: 80%;
+    }
+    .contact-grid{
+        margin: 2% 0;
+    }
+    .contact-grid{
+        flex-wrap: wrap;
     }
   }
   
@@ -87,13 +101,14 @@
       font-size: 0.8rem;
     }
     .contact-card {
-        /* width: 50%; */
         padding: 2%;
       }
       .contact-grid{
         margin: 2% 0 6%;
-        /* flex-direction: row; */
-        /* flex-wrap: nowrap; */
+
       }
+      .contact-grid{
+        flex-wrap: wrap;
+    }
   }
   
