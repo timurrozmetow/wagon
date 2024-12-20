@@ -9,18 +9,30 @@ import WagonsPage from "./components/WagonsPage";
 import CertificatesCarousel from "./components/CertificatesCarousel";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import WelcomePage from "./components/WelcomePage";
+import ServicesPage from "./components/ServicesPage";
+import PartnershipPage from "./components/PartnershipPage";
+import Zawod from "./components/Zawod";
+import ContactPage from "./components/ContactPage";
 
 function App() {
   return (
     <>
       <Navbar />
+      
       <section id="home">
         <HomeCarousel />
       </section>
+      <WelcomePage />
+      
       <AboutSection />
+      
       <section id="capacity">
       <PowerSection />
       </section>
+      <ServicesPage />
+      <PartnershipPage />
+      <Zawod />
 <section id="railways">
 <WagonsPage/>
 </section>
@@ -31,7 +43,7 @@ function App() {
       <CertificatesCarousel />
         
       </section>
-      <Contact/> 
+      <Contact/>
       <Footer />
     </>
   );

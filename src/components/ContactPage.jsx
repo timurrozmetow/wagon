@@ -2,23 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./ContactPage.css";
-import "./Contact.css";
 import { useTranslation } from "react-i18next";
-const Contact = () => {
+
+const ContactPage = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="about-section1">
-      <img className="img2" src="banner/2.webp" alt="logo" />
-      <div className="about-container">
-        {/* <h2>{t("contact")}</h2>
-        <p className="about-description">
-        {t("contact1")}
-        </p>
-        <p className="about-highlights">
-        {t("contact2")}
-        </p> */}
-            <div className="contact-container">
+    <div className="contact-container">
       <motion.h2
         className="contact-title"
         initial={{ opacity: 0, y: -20 }}
@@ -68,9 +58,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </div>
-      </div>
-    </section>
   );
 };
 
-export default Contact;
+export default ContactPage;

@@ -95,7 +95,19 @@ const WagonsPage = () => {
         length: "19" + t("m"),
         type: t("Specialized"),
       },
+      
     },
+    {
+      id: 10,
+      name: t("wagon10"),
+      image: "wagon/sa.webp",
+      specs: {
+        capacity: "70" + t("ton"),
+        length: "13" + t("m"),
+        type: t("Specialized"),
+      },
+      
+    }
   ];
 
   return (

@@ -112,6 +112,10 @@ color: #ffffff ;
   color: #03183f ; 
   }
 
+  .navbar.scrolled .language-switcher button {
+    color: #ffffff ; 
+    }
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
@@ -178,7 +182,7 @@ color: #ffffff ;
 .language-switcher button {
   background: none;
   border: none;
-  color: #03183f;
+  color: #03183f ;
   cursor: pointer;
   font-size: 1rem;
   transition: color 0.3s;

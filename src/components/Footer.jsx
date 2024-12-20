@@ -19,8 +19,8 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>{t("contact")}</h4>
           <ul>
-            <li><a href="mailto:contact@yourdomain.com"><i className="fas fa-envelope"></i>info@grand-millennium.ae</a></li>
-            <li><a href="mailto:contact@yourdomain.com"><i className="fas fa-envelope"></i>sales@grand-millennium.ae</a></li>
+            <li><a href="mailto:info@grand-millennium.ae"><i className="fas fa-envelope"></i>info@grand-millennium.ae</a></li>
+            <li><a href="mailto:sales@grand-millennium.ae"><i className="fas fa-envelope"></i>sales@grand-millennium.ae</a></li>
             <li><a href="tel:+971509724457"><i className="fas fa-phone-alt"></i>+ 971 509724457</a></li>
             <li><i className="fas fa-map-marker-alt"></i>{t("add")}</li>
         </ul>

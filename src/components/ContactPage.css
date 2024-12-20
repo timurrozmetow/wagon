@@ -1,0 +1,99 @@
+
+  .contact-title {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #03183f;
+    margin-bottom: 10px;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-card {
+    /* background: #e3f2fd; */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .contact-icon {
+    font-size: 3rem;
+    color: #03183f;
+    margin-bottom: 15px;
+  }
+  
+  .contact-method {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-detail {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-subtitle {
+      font-size: 1rem;
+    }
+  
+    .contact-card {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-title {
+      font-size: 1.8rem;
+    }
+  
+    .contact-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .contact-icon {
+      font-size: 1.5rem;
+    }
+  
+    .contact-method {
+      font-size: 0.9rem;
+    }
+  
+    .contact-detail {
+      font-size: 0.8rem;
+    }
+    .contact-card {
+        /* width: 50%; */
+        padding: 2%;
+      }
+      .contact-grid{
+        margin: 2% 0 6%;
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+      }
+  }
+  
