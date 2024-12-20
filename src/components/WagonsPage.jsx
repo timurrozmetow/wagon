@@ -127,6 +127,12 @@
           },
         },
         {
+          breakpoint: 652, // Мобильные устройства
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        {
           breakpoint: 768, // Мобильные устройства
           settings: {
             slidesToShow: 2,
