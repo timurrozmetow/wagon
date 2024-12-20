@@ -11,7 +11,6 @@
   align-items: center;
   padding: 20px 30px;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
@@ -21,7 +20,6 @@
 
 .navbar.scrolled {
   background-color: #03183f;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -47,7 +45,6 @@
   color: #ffffff; 
 }
 
-/* Ссылки */
 .nav-link {
   font-size: 1rem;
   font-weight: 500;
@@ -134,7 +131,7 @@ color: #ffffff ;
     z-index: -1;
     padding: 20px 30px;
     transform: translateX(-100%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease, z-index 0.3s ease;
   }
 
@@ -185,11 +182,15 @@ color: #ffffff ;
   color: #03183f ;
   cursor: pointer;
   font-size: 1rem;
-  transition: color 0.3s;
+  transition: color 0.3s, ease .3s ;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
 }
 
 .language-switcher button:hover {
   color: #03183fb4;
+  border-bottom: 1px solid white;
+
 }
 
 .navbar.scrolled .language-switcher button {

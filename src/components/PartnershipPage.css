@@ -11,6 +11,7 @@
     max-width: 1400px;
     margin: 0 auto;
     gap: 20px;
+    padding: 0 4%;
   }
   
   .partnership-content {
@@ -44,13 +45,13 @@
     max-width: 500px;
     height: auto;
     border-radius: 10px;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    /* filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); */
     /* box-shadow: ; */
     transition: transform 0.3s ease;
   }
   
   .partnership-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   
   /* Адаптивность */
@@ -75,7 +76,7 @@
   
   @media (max-width: 480px) {
     .partnership-page{
-      padding: 50px 20px 0;
+      padding: 5% 4% 4%;
     }
     .partnership-title {
       font-size: 1.2rem;
@@ -83,6 +84,7 @@
   
     .partnership-text {
       font-size: 0.9rem;
+      margin-bottom: 0;
     }
   
     .partnership-image {

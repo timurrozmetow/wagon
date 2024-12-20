@@ -28,7 +28,7 @@
 }
 
 .footer-img-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .footer-tagline {
@@ -187,10 +187,14 @@
 
   .footer-tagline {
     font-size: 0.9rem;
+    margin-bottom: 0;
   }
 
   .footer-contact, .footer-social, .footer-logo {
     flex: 1 1 150px;
+  }
+  .footer-logo{
+    margin-bottom: 0;
   }
   .footer-contact h4, .footer-social h4 {
     font-size: 1.1rem;

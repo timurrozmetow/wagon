@@ -10,7 +10,7 @@ const AboutSection = () => {
   };
   return (
     <section id="about" className="about-section">
-      <img className="img1" src="banner/1.webp" alt="logo" />
+      <img className="img12" src="banner/1.webp" alt="logo" />
       <div className="about-container1">
         <h2>{t("aboutSec")}</h2>
         <p className="about-description1">

@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import "./ContactPage.css";
 import "./Contact.css";
 import { useTranslation } from "react-i18next";
 const Contact = () => {
@@ -11,13 +10,6 @@ const Contact = () => {
     <section id="contact" className="about-section1">
       <img className="img2" src="banner/2.webp" alt="logo" />
       <div className="about-container">
-        {/* <h2>{t("contact")}</h2>
-        <p className="about-description">
-        {t("contact1")}
-        </p>
-        <p className="about-highlights">
-        {t("contact2")}
-        </p> */}
             <div className="contact-container">
       <motion.h2
         className="contact-title"
@@ -42,7 +34,6 @@ const Contact = () => {
           whileTap={{ scale: 0.95 }}
         >
           <FaPhoneAlt className="contact-icon" />
-          <h3 className="contact-method">{t("Phone")}</h3>
           <p className="contact-detail">+ 971 509724457</p>
         </motion.div>
         <motion.div
@@ -51,7 +42,6 @@ const Contact = () => {
           whileTap={{ scale: 0.95 }}
         >
           <FaEnvelope className="contact-icon" />
-          <h3 className="contact-method">{t("Email")}</h3>
           <p className="contact-detail">info@grand-millennium.ae</p>
           <p className="contact-detail">sales@grand-millennium.ae</p>
         </motion.div>
@@ -61,7 +51,6 @@ const Contact = () => {
           whileTap={{ scale: 0.95 }}
         >
           <FaMapMarkerAlt className="contact-icon" />
-          <h3 className="contact-method">{t("Address")}</h3>
           <p className="contact-detail">
             {t("AddressDetails")}
           </p>

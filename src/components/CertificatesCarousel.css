@@ -1,155 +1,74 @@
-
-.mentors-container {
-  overflow-x: auto; 
-  white-space: nowrap;
-  padding: 20px 0;
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
-}
-
-.mentors-container::-webkit-scrollbar {
-  display: none;
-}
-
-.mentors-title {
+.certificates-section {
+  padding:2%;
   text-align: center;
-  font-size: 2rem;
-  color: #03183f;
-  margin-bottom: 20px;
-}
-.mentors-carousel {
-  display: inline-flex;
-  gap: 20px;
-  padding-left: 10px;
-}
-.mentor-card {
-  width: 300px;
-  height: 400px;
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.mentor-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.mentor-photo {
   width: 100%;
-  height: 75%;
-  object-fit: cover;
-  border-bottom: 4px solid #03183f;
+  margin: 0 auto;
 }
-.mentor-info {
-  padding: 15px;
-  text-align: center;
-}
-.mentor-name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #03183f;
-}
-.mentor-description {
-  font-size: 1rem;
-  color: #666;
-  margin-top: 10px;
-}
-.mentors-title {
-  text-align: center;
+
+.certificates-title {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 20px;
   color: #03183f;
+  margin-bottom: 20px;
 }
-.mentors-container {
-  overflow: hidden;
-  position: relative;
+
+.certificates-slider {
   width: 100%;
+  overflow: hidden;
 }
 
-.mentors-carousel {
-  display: flex;
-  width: max-content;
-  will-change: transform;
-}
-
-.mentor-card {
-  width: 300px;
-  height: 300px;
-  flex-shrink: 0;
-  margin-right: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.certificate-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.mentor-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-bottom: 2px solid #03183f;
-}
-
-.mentor-info {
   padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-.mentor-name {
+.certificate-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.certificate-title {
+  margin-top: 10px;
   font-size: 1rem;
-  font-weight: 500;
-  color: #666;
+  color: #333333;
 }
 
-.mentor-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-@media (max-width: 768px) {
-  .mentor-card {
-    width: 250px;
-    height: 350px;
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .certificate-card {
+    padding: 8px;
   }
-  .mentor-name {
-    font-size: 1.3rem;
-  }
-  .mentor-description {
+
+  .certificate-title {
     font-size: 0.9rem;
   }
-  .mentors-title{
-    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    padding: 6px;
+  }
+
+  .certificate-title {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
-  .mentor-card {
-    width: 200px;
-    height: 320px;
+  .certificate-card {
+    padding: 4px;
   }
-  .mentor-photo {
-    height: 100%;
+
+  .certificate-title {
+    font-size: 0.7rem;
   }
-  .mentor-name {
-    font-size: 1.2rem;
-  }
-  .mentor-description {
-    font-size: 0.8rem;
-  }
-  .mentors-title{
-    font-size: 1.2rem;
-  }
-}
-.mentors-section {
-  padding: 20px;
-  background-color: #f9f9f9;
 }

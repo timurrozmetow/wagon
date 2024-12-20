@@ -1,91 +1,88 @@
-.partnership-page1 {
-    padding: 50px 20px;
-    /* background: linear-gradient(to bottom, #f9f9f9, #e8f5e9); */
-  }
-  
+partnership-page1 {
+  padding: 50px 20px;
+  /* background: linear-gradient(to bottom, #f9f9f9, #e8f5e9); */
+}
+
+.partnership-container1 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 0 4%;
+}
+
+.partnership-content1 {
+  flex: 1;
+  max-width: 600px;
+}
+
+.partnership-title1 {
+  font-size: 2rem;
+  color: #03183f;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.partnership-text1 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #7a7979;
+  margin-bottom: 15px;
+}
+
+.partnership-image-container1 {
+  /* flex: 1; */
+  max-width: 600px;
+  text-align: center;
+}
+
+.partnership-images1 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.partnership-images1:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
   .partnership-container1 {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 20px;
   }
-  
-  .partnership-content1 {
-    flex: 1;
-    max-width: 600px;
-  }
-  
+
   .partnership-title1 {
-    font-size: 2.5rem;
-    color: #03183f;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .partnership-text1 {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #7a7979;
-    margin-bottom: 15px;
-  }
-  
-  .partnership-image-container1 {
-    /* flex: 1; */
-    max-width: 600px;
     text-align: center;
   }
-  
-  .partnership-images1 {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-    /* box-shadow: ; */
-    transition: transform 0.3s ease;
-  }
-  
-  .partnership-images1:hover {
-    transform: scale(1.05);
-  }
-  .about-factory-description1{
 
+  .partnership-content1 {
+    text-align: center;
   }
-  /* Адаптивность */
-  @media (max-width: 768px) {
-    .partnership-container1 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .partnership-title1 {
-      text-align: center;
-    }
-  
-    .partnership-content1 {
-      text-align: center;
-    }
-  
-    .partnership-text1 {
-      font-size: 1rem;
-    }
+
+  .partnership-text1 {
+    font-size: 1rem;
   }
-  
-  @media (max-width: 480px) {
-    .partnership-title1 {
-      font-size: 2rem;
-    }
-  
-    .partnership-text1 {
-      font-size: 0.9rem;
-    }
-  
-    .partnership-image1 {
-      max-width: 90%;
-    }
+}
+
+@media (max-width: 480px) {
+  .partnership-title1 {
+    padding-top: 5%;
+    font-size: 1rem;
   }
-  
+
+  .partnership-text1 {
+    font-size: 0.9rem;
+  }
+
+  .partnership-image1 {
+    max-width: 90%;
+  }
+}

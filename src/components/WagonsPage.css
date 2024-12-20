@@ -1,105 +1,139 @@
 .wagons-page {
   padding: 2%;
-  background-color: #f4f4f4;
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wagons-slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.wagons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.wagon-card {
+  flex: 0 0 calc(100% / 4); /* Деление на 4 карточки */
+  max-width: 300px;
+  height: 350px;
+  background: #3e5879;
+  color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.wagon-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.slider-button {
+  background-color: #213555;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slider-button:hover {
+  background-color: #3e5879;
+  transform: scale(1.1);
+}
+
+
+
+
+.wagons-page {
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .wagons-page h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #03183f;
   margin-bottom: 20px;
 }
-.wagons-grid {
-  padding: 4%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-content: center;
-}
+
 .wagon-card {
+  box-sizing: border-box;
   background: #3e5879;
   color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  height: 350px;
+  /* padding: 10px; */
 }
 
-.wagon-card:hover {
-  background: #213555;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
 .wagon-image {
-  background: #fff;
   width: 100%;
-  height: 200px;
-  padding: 4%;
+  height: 50%;
   object-fit: cover;
 }
 
-.wagon-info {
-  padding: 15px;
-  text-align: left;
-}
-
 .wagon-info h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .wagon-info p {
-  line-height: 1.5;
   font-size: 1rem;
-  color: #f4f4f4;
+  color: #eaeaea;
+  margin: 3% 0;
 }
+
+
+/* Адаптивность */
 @media (max-width: 1024px) {
-  .wagons-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .wagon-info h2 {
-    font-size: 1.25rem;
-  }
-
-  .wagon-info p {
-    font-size: 0.9rem;
+  .wagon-card {
+    flex: 0 0 calc(100% / 3); /* 3 карточки */
   }
 }
 
 @media (max-width: 768px) {
-  .wagons-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .wagon-image {
-    height: 180px;
-  }
-  .wagons-page h1{
-    font-size: 1.6rem;
+  .wagon-card {
+    flex: 0 0 calc(100% / 2); /* 2 карточки */
   }
 }
 
 @media (max-width: 480px) {
-  .wagons-grid {
-    grid-template-columns: 1fr;
+  .wagon-card {
+    flex: 0 0 100%; /* 1 карточка */
+    height: 280px;
   }
-
-  .wagon-info h2 {
-    font-size: 1rem;
-  }
-
-  .wagon-info p {
-    font-size: 0.8rem;
-  }
-
-  .wagon-image {
-    height: 150px;
-  }
-  .wagons-page h1{
+  .wagons-page h1 {
     font-size: 1.4rem;
+  }
+  .wagon-image{
+    height: 47%;
   }
 }

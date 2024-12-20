@@ -10,14 +10,14 @@ const Zawod = () => {
     <section className="partnership-page1">
       <div className="partnership-container1">
         <div className="partnership-content1">
-        <motion.h2
-        className="partnership-title"
+        <motion.h1
+        className="partnership-title1"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2>{t("AboutFactory")}</h2>
-      </motion.h2>
+        <h1>{t("AboutFactory")}</h1>
+      </motion.h1>
       
         <motion.p
           className="partnership-text"
@@ -40,4 +40,4 @@ const Zawod = () => {
   );
 };
 
-export default Zawod;
+export default Zawod; 
