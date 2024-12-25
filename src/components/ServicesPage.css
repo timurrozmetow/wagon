@@ -19,6 +19,7 @@
   }
   
   .service-card {
+    width: 50%;
     background: #fff;
     border-radius: 15px;
     padding: 3%;
