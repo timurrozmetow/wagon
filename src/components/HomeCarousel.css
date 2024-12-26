@@ -9,7 +9,9 @@
   background-position: center;
   animation: backgroundSlide 12s infinite;
 }
-
+.w50{
+  width: 60%;
+}
 .carousel::before {
   content: "";
   position: absolute;

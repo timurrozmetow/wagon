@@ -16,9 +16,6 @@ const AboutSection = () => {
         <p className="about-description1">
         {t("aboutSec1")}
         </p>
-        <p className="about-highlights1">
-        {t("aboutSec2")}
-        </p>
       </div>
     </section>
   );

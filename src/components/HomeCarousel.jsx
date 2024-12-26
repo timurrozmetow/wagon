@@ -11,7 +11,10 @@ const HomeCarousel = () => {
   return (
     <div className="carousel">
       <div className="carousel-text">
-        <h1>{t("home")}  <br />{t("home1")} </h1>
+        <h1>Grand Millennium FZCO</h1>
+                <p className="w50">{t("welcome")}
+           <strong> Grand Millennium FZCO</strong> – {t("welcome1")}
+        </p>
       </div>
     </div>
   );

@@ -21,7 +21,8 @@ const WelcomePage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1>Grand Millennium FZCO</h1>
+        <h1>{t("home")}  <br />{t("home1")} </h1>
+        
       </motion.div>
       <motion.div
         className="welcome-content"
@@ -29,17 +30,7 @@ const WelcomePage = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 0.5 }}
       >
-        <p>{t("welcome")}
-           <strong> Grand Millennium FZCO</strong> – {t("welcome1")}
-        </p>
-      </motion.div>
-      <motion.div
-        className="welcome-button-container"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-        {/* <button className="welcome-button">Узнать больше</button> */}
+
       </motion.div>
     </div>
   );
