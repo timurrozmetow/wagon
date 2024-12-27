@@ -5,6 +5,8 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      Certificates:"Certificates",
+      Railway:"Railway Wagons",
       name:"Grand Millennium FZCO",
       about: "About",
       capacity: "Capacity",
@@ -85,6 +87,8 @@ const resources = {
   },
   ru: {
     translation: {
+      Certificates:"Сертификаты",
+      Railway:"Железнодорожные вагоны",
         name:"Grand Millennium FZCO",
       about: "О нас",
       capacity: "Вместимость",

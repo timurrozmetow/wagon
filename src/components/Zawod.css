@@ -52,6 +52,11 @@ partnership-page1 {
 .partnership-images1:hover {
   transform: scale(1.02);
 }
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 @media (max-width: 768px) {
   .partnership-container1 {

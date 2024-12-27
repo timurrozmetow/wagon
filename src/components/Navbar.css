@@ -109,9 +109,6 @@ color: #ffffff ;
   color: #03183f ; 
   }
 
-  .navbar.scrolled .language-switcher button {
-    color: #ffffff ; 
-    }
 
 @media (max-width: 768px) {
   .navbar {

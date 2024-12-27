@@ -26,12 +26,13 @@ function App() {
       
       <AboutSection />
       <ServicesPage />
+      <PartnershipPage />
       
       <section id="capacity">
       <PowerSection />
       </section>
       
-      <PartnershipPage />
+      
       
       <Zawod />
 <section id="railways">

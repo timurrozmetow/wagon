@@ -25,16 +25,13 @@
 
 @keyframes backgroundSlide {
   0% {
-    background-image: url('../../public/banner/6.webp');
+    background-image: url('../../public/banner/11.webp');
   }
   33% {
-    background-image: url('../../public/banner/1.webp');
-  }
-  66% {
-    background-image: url('../../public/banner/3.webp');
+    background-image: url('../../public/banner/22.webp');
   }
   100% {
-    background-image: url('../../public/banner/7.webp');
+    background-image: url('../../public/banner/33.webp');
   }
 }
 
@@ -68,5 +65,14 @@
 
   .carousel-text p {
     font-size: 1rem;
+  }
+  .w50 {
+    width: 100%;
+}
+}
+
+@media (max-width: 480px) {
+  .carousel-text h1 {
+    font-size: 2rem;
   }
 }

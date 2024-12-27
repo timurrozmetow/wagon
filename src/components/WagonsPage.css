@@ -110,6 +110,14 @@
   color: #eaeaea;
   margin: 3% 0;
 }
+.wagons-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center
+}
+
 
 
 /* Адаптивность */
@@ -127,6 +135,9 @@
 }
 
 @media (max-width: 480px) {
+  .wagons-list{
+    grid-template-columns:auto;
+  }
   .wagon-card {
     flex: 0 0 100%; /* 1 карточка */
     height: 280px;
