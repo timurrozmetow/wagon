@@ -7,7 +7,7 @@ const resources = {
     translation: {
       Certificates:"Certificates",
       Railway:"Railway Wagons",
-      name:"Grand Millennium FZCO",
+      name:"MTI International",
       about: "About",
       capacity: "Capacity",
       wagon: "Wagon",
@@ -56,9 +56,9 @@ const resources = {
         top-notch production and repair services, meeting the needs of 
         modern railway systems.`,
     add:"Dubai Silicon Oasis, DDP, A2 Building Dubai",
-    res:"2024 Grand Millennium FZCO. All Rights Reserved.",
+    res:"2025 MTI International. All Rights Reserved.",
     welcome:"Welcome to the site",
-    welcome1:"a company that helps businesses grow and develop by providing advanced solutions in procurement, logistics and project management.",
+    welcome1:"Our mission is to deliver efficient, tailored solutions for your business needs. From sourcing high-quality products to optimizing logistics, we are committed to providing exceptional services at the most competitive prices.",
     Services:"Our Services",
     ServicesPage:"Procurement and Supplies",
     ServicesTitle:"We collaborate with a trusted global network of suppliers to offer a diverse range of products and services tailored to your needs.",
@@ -89,7 +89,7 @@ const resources = {
     translation: {
       Certificates:"Сертификаты",
       Railway:"Железнодорожные вагоны",
-        name:"Grand Millennium FZCO",
+        name:"MTI International",
       about: "О нас",
       capacity: "Вместимость",
       wagon: "Вагон",
@@ -137,9 +137,9 @@ const resources = {
       первоклассные производственные и ремонтные услуги, отвечающие потребностям
       современных железнодорожных систем.`,
       add:"Dubai Silicon Oasis, DDP, здание A2 в Дубае",
-      res:"2024 Grand Millennium FZCO. Все права защищены.",
+      res:"2025 MTI International. Все права защищены.",
       welcome:"Добро пожаловать на сайт",
-      welcome1:"компании, которая помогает бизнесу расти и развиваться, предоставляя передовые решения в сфере закупок, логистики и управления проектами.",
+      welcome1:"Наша миссия — предоставлять эффективные, индивидуальные решения для нужд вашего бизнеса. От поиска высококачественных продуктов до оптимизации логистики, мы стремимся предоставлять исключительные услуги по самым конкурентоспособным ценам.",
       Services:"Наши услуги",
       ServicesPage:"Закупки и поставки",
       ServicesTitle:"Мы работаем с проверенной сетью поставщиков по всему миру, чтобы предлагать клиентам широкий выбор товаров и услуг",

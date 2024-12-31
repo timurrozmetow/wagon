@@ -12,6 +12,7 @@
 .w50{
   width: 60%;
 }
+
 .carousel::before {
   content: "";
   position: absolute;
@@ -40,10 +41,10 @@
   color: #fff;
   text-align: left;
   z-index: 1;
-  padding: 1.5% 4% 1.5% 1%;
-  border-radius: 15px;
-  left: 2%;
-  bottom: 6%;
+  padding:  0 0 1% 2%;
+  left: 5%;
+  bottom: 15%;
+  border-left: 2px solid white;
 }
 
 .carousel-text h1 {
@@ -54,10 +55,18 @@
 .carousel-text p {
   font-weight: 400;
   font-size: 1.5rem;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
+.dobro{
+  text-transform: uppercase;
+  font-size: 18px !important;
+}
 
+.changing-text12{
+  padding: 0;
+  margin: 0;
+}
 @media (max-width: 768px) {
   .carousel-text h1 {
     font-size: 2.5rem;
@@ -76,3 +85,19 @@
     font-size: 2rem;
   }
 }
+.changing-text {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out;
+  margin: 1% 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+

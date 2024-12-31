@@ -2,52 +2,43 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import HomeCarousel from "./components/HomeCarousel";
-import AboutSection from "./components/AboutSection";
-import PowerSection from "./components/PowerSection";
 import "./App.css";
-import WagonsPage from "./components/WagonsPage";
-import CertificatesCarousel from "./components/CertificatesCarousel";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-import WelcomePage from "./components/WelcomePage";
+import AboutSection from "./components/AboutSection";
 import ServicesPage from "./components/ServicesPage";
-import PartnershipPage from "./components/PartnershipPage";
-import Zawod from "./components/Zawod";
+import Certificates from "./components/Certificates";
+import SliderWithText from "./components/SliderWithText";
+import SliderWithText11 from "./components/SliderWithText11";
+import SliderWithText2 from "./components/SliderWithText2";
+import SliderWithText111 from "./components/SliderWithText111";
+import SliderWithText22 from "./components/SliderWithText22";
+import SliderWithText1111 from "./components/SliderWithText1111";
+import ContactForm from "./components/ContactForm";
+import AboutWithMap from "./components/AboutWithMap";
+import SliderWithText222 from "./components/SliderWithText222";
+
+
+
 
 function App() {
   return (
     <>
       <Navbar />
-      
-      <section id="home">
+      <div className="mainOfPadd">
         <HomeCarousel />
-      </section>
-      <WelcomePage />
-      
-      <AboutSection />
-      <ServicesPage />
-      <PartnershipPage />
-      
-      <section id="capacity">
-      <PowerSection />
-      </section>
-      
-      
-      
-      <Zawod />
-<section id="railways">
-<WagonsPage/>
-</section>
-
-
-
-      
-      <section id="services">
-      <CertificatesCarousel />
-        
-      </section>
-      <Contact/>
-
+      </div>
+      <AboutSection/>
+      <ServicesPage/>
+      <Certificates />
+      <SliderWithText />
+      <SliderWithText11/>
+      <SliderWithText2/>
+      <SliderWithText111 />
+      <SliderWithText22 />
+      <SliderWithText1111 />
+      <SliderWithText222 />
+      <ContactForm />
+      <AboutWithMap/>
       <Footer />
     </>
   );

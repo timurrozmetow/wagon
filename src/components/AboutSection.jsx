@@ -1,23 +1,43 @@
 import React from "react";
-import "./AboutSection.css";
-import { useTranslation } from "react-i18next";
+import "./AboutSection.css"; // Подключите CSS файл
 
 const AboutSection = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
   return (
-    <section id="about" className="about-section">
-      <img className="img12" src="banner/44.webp" alt="logo" />
-      <div className="about-container1">
-        <h2>{t("aboutSec")}</h2>
-        <p className="about-description1">
-        {t("aboutSec1")}
+    <div className="container">
+      <div className="about-section">
+        <h2>About us:</h2>
+        <p className="w60">
+          At MTI International, we are a global leader in sourcing and logistics
+          management, dedicated to helping businesses succeed. With a strong
+          network of partners and extensive expertise across industries, we
+          ensure seamless and reliable operations from start to finish.
         </p>
       </div>
-    </section>
+
+      <div className="stats">
+        <div className="stat">
+          <h3>5+</h3>
+          <p>
+            Fluent communication in Turkish, Turkmen, English, Russian, and
+            Farsi ensures smooth collaboration across borders.
+          </p>
+        </div>
+        <div className="stat">
+          <h3>8+</h3>
+          <p>
+            years of experience: Trusted by clients worldwide to deliver
+            cost-effective and reliable solutions.
+          </p>
+        </div>
+        <div className="stat">
+          <h3>9+</h3>
+          <p>
+            Industries served: Our expertise spans multiple sectors, including
+            manufacturing, construction, and more.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 

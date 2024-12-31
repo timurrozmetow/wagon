@@ -1,6 +1,6 @@
 
 .ImgLogo {
-  width: 50%;
+  width: 80%;
   max-width: 120px;
   height: auto;
 }
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 0 3%;
   background-color: #ffffff;
   position: fixed;
   width: 100%;
@@ -19,13 +19,13 @@
 }
 
 .navbar.scrolled {
-  background-color: #03183f;
+  background-color: #002855;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #03183f;
+  color: #002855;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
@@ -48,7 +48,7 @@
 .nav-link {
   font-size: 1rem;
   font-weight: 500;
-  color: #03183f;
+  color: #002855;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 4px;
@@ -106,7 +106,7 @@ color: #ffffff ;
 }
 .navbar.scrolled .nav-link:hover {
   background-color: #ffffff ; 
-  color: #03183f ; 
+  color: #002855 ; 
   }
 
 
@@ -149,11 +149,11 @@ color: #ffffff ;
 }
 
 .open .nav-link{
-  color: #03183f;
+  color: #002855;
 }
 
 .nav-links.open .nav-link {
-  color: #03183f;
+  color: #002855;
 }
 
 .nav-links.open .nav-link:hover {
